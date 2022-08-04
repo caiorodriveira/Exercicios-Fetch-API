@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/*-------------------------------------*/
+/*                GERAL                */
+/*-------------------------------------*/
+body {
+    font-size: 1.15em;
+}
+.forms>* {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*------------Botões Buscar-------------*/
+#buscar {
+    font-size: 11px;
+    background-color: #305fcb;
+    color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#buscar:hover {
+    background-color: #0b2d7b;
+}
+/*------Botões Limpar - exceto cep-------*/
+.limpar {
+    background-color: #9a1414;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.limpar:hover {
+    background-color: #630505;
+}
+
+/*-------------------------------------*/
+/*            FRASE DO DIA             */
+/*-------------------------------------*/
+.frase-botao {
+    background-color: #1f9e4b;
+    color: white;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.frase-botao:hover {
+    background-color: #03521f;
+}
+.frase {
+    border: 5px dotted;
+    border-color: #0ab446;
+    border-radius: 20px;
+}
+
+/*-------------------------------------*/
+/*             BUSCA CEP               */
+/*-------------------------------------*/
+#infocep {
+    background-color: rgb(211, 211, 211);
+    border: none;
+    border-radius: 14px;
+}
+.camposcep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cepvalor {
+    width: 400px
+}
+#limpar {
+    font-size: 11px;
+    background-color: #b81414;
+    color: white;
+    padding: 5px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#limpar:hover {
+    background-color: #8b0d0d;
+}
+
+
+/*-------------------------------------*/
+/*              BANDAS                 */
+/*-------------------------------------*/
+#result-bands {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #256dc0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+#infobands,
+#result-infobands {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    border-bottom: 1px solid;
+}
+#idresultado {
+    background-color: #ece9e9;
+}
+
+/*-------------------------------------*/
+/*              POKEDEX                */
+/*-------------------------------------*/
+#pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+#namepoke {
+    font-family: 'Press Start 2P', cursive;
+    color: #ffffff;
+    background-color: #065980;
+    border: 10px solid #065980;
+    border-radius: 14px 14px 0 0;
+}
+#imgpoke {
+    width: 50%;
+    border: 1px solid;
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    background-color: #065980;
+}
+#sortearpoke {
+    width: 15%;
+    height: 20%;
+    font-family: 'Press Start 2P', cursive;
+    ;
+    background-color: #d41515;
+    color: #ebe59b;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#sortearpoke:hover {
+    background-color: #ebe59b;
+    color: #d41515;
+}

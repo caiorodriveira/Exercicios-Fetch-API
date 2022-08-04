@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios Fudidos/ Fetch e API</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <div class="forms">
+        <form id="frasedodia">
+            <h3> Frase do Dia</h3>
+            <p><button class="frase-botao" type="submit" name="frase-botao">Frase do dia</button>
+                <button class="limpar" type="button" name="remove" onclick="removefrase()">Remover Frase</button>
+            </p>
+            <div id="frase"></div>
+        </form>
+
+        <form id="pesquisacep">
+            <h3> Pesquisa CEP </h3>
+
+            <div>
+                <label for="cep">Informe o CEP: </label>
+                <input type="number" name="cep" id="cep" maxlength="8">
+                <button type="submit" id="buscar">Buscar</button>
+            </div>
+            <button class="limpar" onclick="limparcep()" type="button">Limpar</button>
+            <br>
+            <p id='result-cep'></p>
+            <fieldset id="infocep">
+                <div class="camposcep">
+                    <label for="city">Cidade: </label>
+                    <input type="text" class="cepvalor" disabled name="city" id="city">
+                </div>
+                <div class="camposcep">
+                    <label for="city">Estado: </label>
+                    <input type="text" class="cepvalor" disabled name="state" id="state">
+                </div>
+                <div class="camposcep">
+                    <label for="city">Logradouro: </label>
+                    <input type="text" class="cepvalor" disabled name="street" id="street">
+                </div>
+                <div class="camposcep">
+                    <label for="city">Número: </label>
+                    <input type="text" class="cepvalor" name="number" id="number">
+                </div>
+                <div class="camposcep">
+                    <label for="city">Bairro: </label>
+                    <input type="text" class="cepvalor" disabled name="district" id="district">
+                </div>
+                <div class="camposcep">
+                    <label for="city">Complemento: </label>
+                    <input type="text" class="cepvalor" name="complement" id="complement">
+                </div>
+            </fieldset>
+        </form>
+
+        <form id="bandas">
+            <h3> Bandas </h3>
+            <div>
+                <label for="bandas">Informe o nome da Banda/Artista: </label>
+                <input type="text" name="buscabanda" id="buscabanda">
+                <button type="submit" id="buscar">Buscar</button>
+                <button type="button" id="limpar" onclick="clearbands()">Limpar</button>
+            </div>
+            <div id="bands"></div>
+        </form>
+
+        <form id="pokedex">
+            <h3> Podedex </h3>
+            <button type="submit" id="sortearpoke">Pokemon</button>
+            <div id="pokemon"></div>
+        </form>
+
+    </div>
+</body>
+
+</html>
